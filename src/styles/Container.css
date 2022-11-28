@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #272727;
+  color: white;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  color: black;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  color: #ffffffad;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
+}

@@ -1,0 +1,8 @@
+.detailsButton {
+  background: white;
+  height: 32px;
+  width: 110px;
+  border-radius: 20px;
+  line-height: 24px;
+  margin: 10px 0;
+}
