@@ -30,12 +30,12 @@ export default function Container() {
   }
 
   useEffect(() => {
-    fetch("https://ghibliapi.herokuapp.com/films")
+    fetch("https://studio-ghibli-api-production.up.railway.app")
       .then((response) => response.json())
       .then((data) => {
-        setMovies(data);
+        setMovies(data.films);
 
-        let top5 = data
+        let top5 = data.films
           .filter((top) => top.rt_score > 95)
           .sort((a, b) => b.rt_score - a.rt_score);
         let top = top5.map((top) => top);

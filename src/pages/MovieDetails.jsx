@@ -15,7 +15,7 @@ export default function Details() {
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
-    fetch(`https://ghibliapi.herokuapp.com/films/${params.id}`)
+    fetch(`https://studio-ghibli-api-production.up.railway.app/${params.id}`)
       .then((response) => response.json())
       .then((data) => {
         setMovie(data);

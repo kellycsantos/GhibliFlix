@@ -15,17 +15,4 @@ a {
   color: black;
 }
 
-.slick-dots {
-  bottom: 10px;
-}
 
-.slick-dots li button:before {
-  color: #ffffffad;
-  font-size: 15px;
-  opacity: 0.5;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #fff;
-  opacity: 1;
-}
