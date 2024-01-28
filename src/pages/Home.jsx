@@ -30,7 +30,7 @@ export default function Container() {
   }
 
   useEffect(() => {
-    fetch("https://studio-ghibli-api-production.up.railway.app")
+    fetch("https://studio-ghibli-api.onrender.com")
       .then((response) => response.json())
       .then((data) => {
         setMovies(data.films);
