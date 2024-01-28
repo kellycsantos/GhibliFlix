@@ -15,7 +15,7 @@ export default function Details() {
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
-    fetch(`https://studio-ghibli-api-production.up.railway.app/${params.id}`)
+    fetch(`https://studio-ghibli-api.onrender.com/${params.id}`)
       .then((response) => response.json())
       .then((data) => {
         setMovie(data);
